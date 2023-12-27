@@ -70,7 +70,7 @@ if selected == "Predictions":
         label_encoder = LabelEncoder()
         for col in ordinal_columns:
             df[col] = label_encoder.fit_transform(df[col])
-            return df
+        return df
 
     # Function to predict rent
     def predict_rent(model, input_data):
